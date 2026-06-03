@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Behavioral Services | Jupco Healthcare</title>
+    <meta name="description"
+        content="Explore Jupco's comprehensive behavioral services including psychiatric evaluations, therapy, medication management, and holistic wellness programs.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+     <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <meta name="theme-color" content="#2BAE9B">
+    <style>
+        /* Hero Section */
+        .services-hero {
+            background: linear-gradient(135deg, #f0f9f7 0%, #e8f5f2 100%);
+            padding: 60px 0 80px;
+            text-align: center;
+        }
+
+        .services-hero h1 {
+            font-size: 4rem;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--dark), var(--mint-deep));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .services-hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Category Tabs */
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 3rem 0 2rem;
+        }
+
+        .category-btn {
+            background: white;
+            border: 1px solid var(--mint-light);
+            padding: 0.8rem 1.8rem;
+            border-radius: 999px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            color: var(--text-secondary);
+        }
+
+        .category-btn.active,
+        .category-btn:hover {
+            background: linear-gradient(135deg, var(--mint), var(--mint-deep));
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(95, 214, 194, 0.3);
+        }
+
+        /* Services Grid */
+        .services-grid1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .service-card1 {
+            background: white;
+            border-radius: 32px;
+            padding: 2rem;
+            transition: var(--transition-smooth);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        .service-card1:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-icon1 {
+            width: 80px;
+            height: 80px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, var(--mint-pale), var(--mint-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--mint-deep);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card1 h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .service-card1 p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+        }
+
+        .service-features11 {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .service-features1 li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .service-features1 li i {
+            color: var(--mint-deep);
+            font-size: 0.75rem;
+        }
+
+        .service-tag1 {
+            display: inline-block;
+            background: var(--mint-pale);
+            padding: 0.3rem 1rem;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--mint-deep);
+            margin-top: 0.5rem;
+        }
+
+        .learn-more1-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            color: var(--mint-deep);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
+
+        .learn-more1-link:hover {
+            gap: 0.8rem;
+        }
+
+        /* Process Section */
+        .process-section {
+            background: linear-gradient(135deg, #f7fbfa 0%, #edf7f5 100%);
+            padding: 80px 0;
+            margin: 40px 0;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-step {
+            text-align: center;
+        }
+
+        .process-number {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, var(--mint), var(--mint-deep));
+            color: white;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .process-step h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .process-step p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--dark), var(--mint-dark));
+            border-radius: 48px;
+            padding: 4rem 3rem;
+            margin: 80px auto;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-banner .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: white;
+            color: var(--mint-deep);
+            padding: 1rem 2rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            transition: var(--transition-smooth);
+        }
+
+        .cta-banner .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .services-grid1 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .services-grid1 {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .cta-banner h2 {
+                font-size: 1.8rem;
+            }
+
+            .category-tabs {
+                gap: 0.5rem;
+            }
+
+            .category-btn {
+                padding: 0.5rem 1.2rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--navbar-->
+    <header class="header" id="header">
+        <div class="header-content">
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <img src="./img/logo-01.png" alt="Jupco Behavioral Healthcare Logo" class="logo-img">
+            </a>
+
+            <!-- NAVIGATION -->
+            <nav class="nav" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="specialties.html">Specialties</a>
+                <a href="contact.html">Contact</a>
+
+                <!-- MOBILE CTA -->
+                <button class="mobile-cta-btn" id="mobileCtaBtn">
+                    Book Consultation
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </nav>
+
+            <!-- RIGHT SIDE -->
+            <div class="header-icons">
+                <!-- SOCIAL ICONS -->
+                <a href="#" class="icon-btn" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="#" class="icon-btn" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- DESKTOP CTA -->
+                <a href="book-an-appointment.html" class="cta-btn" id="mainCtaBtn">
+                    <span>Book Online</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-hero">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="services.html">Services</a>
+                <span>/</span>
+                <span class="active">Behavioral Services</span>
+            </div>
+            <div class="container">
+                <h1>Comprehensive Behavioral Services</h1>
+                <p>Evidence-based psychiatric care, therapy, and wellness programs tailored to your unique journey
+                    toward mental wellness.</p>
+            </div>
+        </section>
+
+        <div class="container">
+
+            <!-- Services Grid -->
+            <div class="services-grid1" id="servicesGrid">
+                <!-- Psychiatric Evaluation -->
+                <div class="service-card1" data-category="psychiatric">
+                    <div class="service-icon1"><i class="fas fa-brain"></i></div>
+                    <h3>Psychiatric Evaluation</h3>
+                    <p>Comprehensive assessment by board-certified psychiatrists to diagnose mental health conditions
+                        and create personalized treatment plans.</p>
+                    <ul class="service-features1">
+                        <li><i class="fas fa-check"></i> 90-minute initial consultation</li>
+                        <li><i class="fas fa-check"></i> Comprehensive diagnostic assessment</li>
+                        <li><i class="fas fa-check"></i> Personalized treatment recommendations</li>
+                    </ul>
+                    <span class="service-tag1">Psychiatric Care</span>
+                </div>
+
+                <!-- Medication Management -->
+                <div class="service-card1" data-category="psychiatric">
+                    <div class="service-icon1"><i class="fas fa-prescription-bottle"></i></div>
+                    <h3>Medication Management</h3>
+                    <p>Expert psychiatric medication prescribing, monitoring, and adjustment for optimal outcomes with
+                        minimal side effects.</p>
+                    <ul class="service-features1">
+                        <li><i class="fas fa-check"></i> 30-minute follow-up appointments</li>
+                        <li><i class="fas fa-check"></i> Ongoing medication monitoring</li>
+                        <li><i class="fas fa-check"></i> Coordinated care with therapists</li>
+                    </ul>
+                    <span class="service-tag1">Psychiatric Care</span>
+                </div>
+
+                <!-- Individual Therapy -->
+                <div class="service-card1" data-category="therapy">
+                    <div class="service-icon1"><i class="fas fa-user-friends"></i></div>
+                    <h3>Individual Therapy</h3>
+                    <p>One-on-one sessions with licensed therapists using evidence-based modalities including CBT, DBT,
+                        and psychodynamic therapy.</p>
+                    <ul class="service-features1">
+                        <li><i class="fas fa-check"></i> 50-minute sessions</li>
+                        <li><i class="fas fa-check"></i> Flexible scheduling options</li>
+                        <li><i class="fas fa-check"></i> Virtual or in-person availability</li>
+                    </ul>
+                    <span class="service-tag1">Therapy & Counseling</span>
+                </div>
+
+                <!-- Family Therapy -->
+                <div class="service-card1" data-category="therapy">
+                    <div class="service-icon1"><i class="fas fa-users"></i></div>
+                    <h3>Family & Couples Therapy</h3>
+                    <p>Strengthen relationships, improve communication, and resolve conflicts with professional family
+                        systems therapy.</p>
+                    <ul class="service-features1">
+                        <li><i class="fas fa-check"></i> 75-minute sessions</li>
+                        <li><i class="fas fa-check"></i> Evidence-based approaches</li>
+                        <li><i class="fas fa-check"></i> Evening & weekend availability</li>
+                    </ul>
+                    <span class="service-tag1">Therapy & Counseling</span>
+                </div>
+
+                <!-- Group Therapy -->
+                <div class="service-card1" data-category="therapy">
+                    <div class="service-icon1"><i class="fas fa-chalkboard-user"></i></div>
+                    <h3>Group Therapy Programs</h3>
+                    <p>Connect with others in supportive group settings focused on specific concerns like anxiety,
+                        depression, or trauma recovery.</p>
+                    <ul class="service-features1">
+                        <li><i class="fas fa-check"></i> 90-minute weekly sessions</li>
+                        <li><i class="fas fa-check"></i> 6-8 participants per group</li>
+                        <li><i class="fas fa-check"></i> Confidential environment</li>
+                    </ul>
+                    <span class="service-tag1">Therapy & Counseling</span>
+                </div>
+
+                <!-- Trauma Therapy -->
+                <div class="service-card1" data-category="therapy">
+                    <div class="service-icon1"><i class="fas fa-shield-heart"></i></div>
+                    <h3>Trauma-Informed Therapy</h3>
+                    <p>Specialized treatment for PTSD, complex trauma, and adverse experiences using EMDR, CPT, and
+                        somatic approaches.</p>
+                    <ul class="service-features1">
+                        <li><i class="fas fa-check"></i> EMDR therapy available</li>
+                        <li><i class="fas fa-check"></i> Safe & supportive environment</li>
+                        <li><i class="fas fa-check"></i> Flexible session lengths</li>
+                    </ul>
+                    <span class="service-tag1">Therapy & Counseling</span>
+                </div>
+
+                <!-- Mindfulness Program -->
+                <div class="service-card1" data-category="wellness">
+                    <div class="service-icon1"><i class="fas fa-spa"></i></div>
+                    <h3>Mindfulness & Stress Reduction</h3>
+                    <p>Evidence-based mindfulness programs to reduce stress, improve emotional regulation, and enhance
+                        overall wellbeing.</p>
+                    <ul class="service-features1">
+                        <li><i class="fas fa-check"></i> 8-week MBSR program</li>
+                        <li><i class="fas fa-check"></i> Guided meditation sessions</li>
+                        <li><i class="fas fa-check"></i> Daily practice resources</li>
+                    </ul>
+                    <span class="service-tag1">Wellness Programs</span>
+                </div>
+
+                <!-- Lifestyle Medicine -->
+                <div class="service-card1" data-category="wellness">
+                    <div class="service-icon1"><i class="fas fa-leaf"></i></div>
+                    <h3>Holistic Wellness Coaching</h3>
+                    <p>Integrate nutrition, sleep, exercise, and lifestyle changes to support mental health alongside
+                        clinical treatment.</p>
+                    <ul class="service-features1">
+                        <li><i class="fas fa-check"></i> Personalized wellness plans</li>
+                        <li><i class="fas fa-check"></i> Nutritional guidance</li>
+                        <li><i class="fas fa-check"></i> Sleep hygiene optimization</li>
+                    </ul>
+                    <span class="service-tag1">Wellness Programs</span>
+                </div>
+
+                <!-- Telehealth -->
+                <div class="service-card1" data-category="psychiatric">
+                    <div class="service-icon1"><i class="fas fa-video"></i></div>
+                    <h3>Telehealth Services</h3>
+                    <p>Secure, convenient virtual appointments for all psychiatric and therapy services from anywhere in
+                        the state.</p>
+                    <ul class="service-features1">
+                        <li><i class="fas fa-check"></i> HIPAA-compliant platform</li>
+                        <li><i class="fas fa-check"></i> Same-week availability</li>
+                        <li><i class="fas fa-check"></i> Prescriptions sent to your pharmacy</li>
+                    </ul>
+                    <span class="service-tag1">Psychiatric Care</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <div class="section-label" style="color: var(--mint-deep); font-weight: 700; letter-spacing: 2px;">
+                        How It Works</div>
+                    <h2 style="font-family: 'Manrope', sans-serif; font-size: 2.5rem;">Your Journey to Wellness</h2>
+                    <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Simple, supportive, and
+                        tailored to your needs</p>
+                </div>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <h3>Reach Out</h3>
+                        <p>Contact us via phone, email, or our online form. A care coordinator will respond within 2
+                            hours.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <h3>Schedule</h3>
+                        <p>Choose a time that works for you — virtual or in-person appointments available within 48-72
+                            hours.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <h3>Assess & Plan</h3>
+                        <p>Meet with your provider for a comprehensive evaluation and collaborative treatment planning.
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">4</div>
+                        <h3>Heal & Grow</h3>
+                        <p>Begin your personalized care journey with ongoing support from your dedicated clinical team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <div class="container">
+            <div class="cta-banner">
+                <h2>Ready to Begin Your Behavioral Health Journey?</h2>
+                <p>Our expert team is here to support you with compassionate, evidence-based care.</p>
+                <a href="contact.html" class="btn">Schedule Your Consultation <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-premium">
+        <div class="container">
+            <div class="footer-top" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 3rem;">
+                <div class="footer-brand" style="max-width: 300px;">
+                    <div class="footer-logo"><img src="./img/logo-01.png" alt="Jupco Logo"></div>
+                    <p>Premium behavioral healthcare designed around compassion, privacy, and personalized healing
+                        experiences.</p>
+                    <div class="footer-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i
+                                class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-wrapper" style="display: flex; gap: 4rem; flex-wrap: wrap;">
+                    <div class="footer-links">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="behavioral-services.html">Behavioral Health</a></li>
+                            <li><a href="schizophrenia.html">Schizophrenia Care</a></li>
+                            <li><a href="anxiety-disorder.html">Anxiety Management</a></li>
+                            <li><a href="psychiatric-evaluation.html">Psychiatric Evaluation</a></li>
+                            <li><a href="dementia-behavioral-symptoms.html">Dementia Behavioral Symptoms</a></li>
+                            <li><a href="medication-management.html">Medication Management</a></li>
+                            <li><a href="counseling.html">Counseling</a></li>
+                            <li><a href="bipolar-disorder-management.html">Bipolar Disorder Management</a></li>
+                            <li><a href="major-depressive-disorder.html">Major Depressive Disorder</a></li>
+                            <li><a href="panic-disorder.html">Panic Disorder</a></li>
+                            <li><a href="ptsd.html">PTSD</a></li>
+                            <li><a href="adhd.html">ADHD</a></li>
+                            <li><a href="sleep-disorder.html">Sleep Disorders</a></li>
+                            <li><a href="addiction.html">Addiction Treatment</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="specialties.html">Specialties</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:info@jupcohealth.com">info@jupcohealth.com</a></li>
+                            <li><a href="tel:+18885742273">631-350-0457</a></li>
+                            <li>24/7 Virtual Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <div class="newsletter-text">
+                    <h3>Stay connected with wellness insights</h3>
+                    <p>Receive mental wellness tips and resources directly in your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-bottom"
+                style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                <p>
+                    © 2026 Jupco Behavioral Healthcare. All rights reserved.
+                    Built with ❤️ by
+                    <a href="https://www.synorasol.com" target="_blank" rel="noopener noreferrer">
+                        Synorasol
+                    </a>
+                </p> <!--<div style="margin-top: 1rem;"><a href="#"
+                        style="color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 1rem;">Privacy
+                        Policy</a><a href="#" style="color: rgba(255,255,255,0.6); text-decoration: none;">Terms &
+                        Conditions</a>
+                </div>-->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+            });
+
+            // Mobile menu toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navMenu');
+            if (menuToggle) {
+                menuToggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    navMenu.classList.toggle('active');
+                    const icon = menuToggle.querySelector('i');
+                    if (icon.classList.contains('fa-bars')) icon.classList.replace('fa-bars', 'fa-times');
+                    else icon.classList.replace('fa-times', 'fa-bars');
+                });
+            }
+            // Newsletter form
+            const newsletter = document.querySelector('.newsletter-form');
+            if (newsletter) {
+                newsletter.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Subscribed! You’ll receive wellness insights.');
+                    newsletter.reset();
+                });
+            }
+        })();
+    </script>
+</body>
+
+</html>

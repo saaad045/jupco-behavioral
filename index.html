@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Jupco Behavioral Healthcare</title>
+
+    <meta name="description"
+        content="Premium behavioral healthcare services with personalized psychiatric care, therapy, and holistic wellness programs in a luxurious, confidential setting.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <meta name="theme-color" content="#2BAE9B">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/master.css">
+    <style>
+        /* Banner features pills */
+        .banner-features {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem
+        }
+
+        .banner-features .feature-pill {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 8px 18px;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(6px)
+        }
+
+        .banner-features .feature-pill i {
+            color: var(--mint-deep, #5FD6C2);
+            font-size: 0.95rem
+        }
+
+        /* Responsive adjustments */
+        @media (max-width:600px) {
+            .banner-features {
+                gap: 10px
+            }
+
+            .banner-features .feature-pill {
+                padding: 8px 12px;
+                font-size: 0.9rem
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--navbar-->
+    <header class="header" id="header">
+        <div class="header-content">
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <img src="./img/logo-01.png" alt="Jupco Behavioral Healthcare Logo" class="logo-img">
+            </a>
+
+            <!-- NAVIGATION -->
+            <nav class="nav" id="navMenu">
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="specialties.html">Specialties</a>
+                <a href="contact.html">Contact</a>
+
+                <!-- MOBILE CTA -->
+                <button class="mobile-cta-btn" id="mobileCtaBtn">
+                    Book Consultation
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </nav>
+
+            <!-- RIGHT SIDE -->
+            <div class="header-icons">
+                <!-- SOCIAL ICONS -->
+                <a href="#" class="icon-btn" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="#" class="icon-btn" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- DESKTOP CTA -->
+                <a href="book-an-appointment.html" class="cta-btn" id="mainCtaBtn">
+                    <span>Book Online</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-wrapper">
+                <div class="hero-form-box">
+                    <h3>Start Your Healing Journey</h3>
+                    <p>Leave your details and one of our mental health care coordinators will contact you within 2
+                        hours.</p>
+                    <form id="heroForm">
+                        <input type="text" placeholder="Full name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Phone number" required>
+                        <button type="submit">Request Consultation →</button>
+                    </form>
+                    <small class="hero-trust">
+                        <span>🧠 Board-Certified Psychiatrist</span>
+                        <span>🔒 Private & Confidential Care</span>
+                        <span>❤️ Personalized Mental Health Support</span>
+                    </small>
+                </div>
+
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="./img/hero1.jpg" alt="Mental Health Psychiatrist">
+                    </div>
+                    <div class="hero-bottom">
+                        <h1>Compassionate Psychiatric Care for a Healthier Mind</h1>
+                        <a href="contact.html" class="hero-btn">Book Appointment →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <div class="container" id="about">
+            <div class="about-premium">
+                <div class="about-grid">
+
+                    <div class="about-img">
+                        <i class="fas fa-heartbeat" style="font-size: 5rem; color: var(--mint-deep);"></i>
+                        <div style="font-size: 2rem; margin-top: 1rem;">💙</div>
+                    </div>
+
+                    <div class="about-text">
+                        <span class="section-label">Behavioral Healthcare Services</span>
+                        <br>
+
+                        <h2>JUPCO BEHAVIORAL HEALTH</h2>
+
+                        <p>
+                            Jupco Behavioral Health is committed to providing compassionate,
+                            evidence-based mental healthcare services designed to support
+                            individuals on their journey toward emotional wellness and lasting
+                            behavioral health. Our patient-centered approach focuses on
+                            personalized treatment plans, professional support, and holistic
+                            care that empowers clients to achieve improved mental well-being,
+                            stability, and quality of life.
+                        </p>
+
+                        <div class="stats-grid-premium">
+
+                            <div class="stat-premium featured">
+                                <div class="stat-number" style="color: white;">24/7</div>
+                                <div>Patient Support</div>
+                            </div>
+
+                            <div class="stat-premium">
+                                <div class="stat-number">100%</div>
+                                <div>Client-Focused Care</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Premium Experience -->
+        <section class="premium-experience">
+            <div class="container">
+                <div class="experience-wrapper">
+                    <div class="experience-visual">
+                        <div class="glass-card main-card">
+                            <div class="card-top">
+                                <span class="live-dot"></span>
+                                Premium Behavioral Care
+                            </div>
+                            <h3>Designed for people who value privacy, comfort, and real healing.</h3>
+                            <p>Jupco Behavioral Healthcare combines modern psychiatry, therapeutic excellence, and
+                                luxury patient experience into one seamless journey.</p>
+                            <div class="experience-metrics">
+                                <div class="metric-box">
+                                    <h4>24/7</h4><span>Confidential support</span>
+                                </div>
+                                <div class="metric-box">
+                                    <h4>1-on-1</h4><span>Personalized sessions</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="experience-content">
+                        <div class="premium-tag">Elevated Mental Wellness</div>
+                        <h2>A behavioral healthcare experience built around your lifestyle.</h2>
+                        <p>From private consultations to personalized treatment plans, every part of your experience is
+                            carefully designed to feel calming, supportive, and deeply human.</p>
+                        <div class="luxury-points">
+                            <div class="luxury-point">
+                                <div class="point-icon"><i class="fas fa-spa"></i></div>
+                                <div>
+                                    <h4>Calm & Modern Environment</h4><span>Thoughtfully designed care spaces that
+                                        create comfort and emotional ease.</span>
+                                </div>
+                            </div>
+                            <div class="luxury-point">
+                                <div class="point-icon"><i class="fas fa-user-shield"></i></div>
+                                <div>
+                                    <h4>Discreet & Confidential</h4><span>Your privacy and emotional safety remain our
+                                        highest priority.</span>
+                                </div>
+                            </div>
+                            <div class="luxury-point">
+                                <div class="point-icon"><i class="fas fa-brain"></i></div>
+                                <div>
+                                    <h4>Personalized Care Journey</h4><span>Tailored behavioral wellness strategies for
+                                        long-term wellbeing.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="book-an-appointment.html" class="premium-btn1">Schedule Private Consultation →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <div class="container" style="margin-top: -30px; position: relative; z-index: 4;" id="contact">
+            <div class="form-card-premium">
+                <div
+                    style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; align-items: center;">
+                    <div>
+                        <h3 style="font-size: 1.8rem; color: white;">Start your journey today</h3>
+                        <div class="sub" style="color: white;">Fill the form a care coordinator will
+                            reach you within 2h</div>
+                    </div>
+                    <div style="flex:2; min-width: 260px;">
+                        <form id="premiumForm">
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <div class="input-group" style="flex:1"><input type="text" placeholder="Full name"
+                                        id="fullName" required></div>
+                                <div class="input-group" style="flex:1"><input type="tel" placeholder="Phone number"
+                                        id="phoneNumber" required></div>
+                            </div>
+                            <div class="input-group"><textarea rows="2" placeholder="How can we assist you?"></textarea>
+                            </div>
+                            <button type="submit" class="form-btn-premium">Request consultation <i
+                                    class="fas fa-calendar-check"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">Evidence-based care</div>
+                    <h2 class="section-title">Compassionate support for every mind</h2>
+                    <div class="section-subtext">Personalized, holistic therapies designed to restore balance and
+                        empower your journey toward emotional wellness.</div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- CARD 1 -->
+                    <div class="service-card" data-card="1"
+                        style="background-image: url('https://i.pinimg.com/736x/cb/63/cc/cb63cc6c747d67cfb598cb0326d2aba5.jpg');">
+                        <div class="service-overlay">
+                            <h3>Behavioral Services</h3>
+                            <div class="service-content">
+                                <p>
+                                    Comprehensive behavioral health support with personalized
+                                    treatment plans focused on emotional wellness and stability.
+                                </p>
+                                <a class="service-btn" data-service="Anxiety Therapy" href="behavioral-services.html">
+                                    Learn More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="service-card" data-card="2"
+                        style="background-image: url('https://i.pinimg.com/1200x/0c/e2/b3/0ce2b38427536b4583993390e8e92c7f.jpg');">
+                        <div class="service-overlay">
+                            <h3>Schizophrenia</h3>
+                            <div class="service-content">
+                                <p>
+                                    Compassionate care and evidence-based support for individuals
+                                    living with schizophrenia and related conditions.
+                                </p>
+                                <a class="service-btn" data-service="Anxiety Therapy" href="schizophrenia.html">
+                                    Learn More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="service-card" data-card="3"
+                        style="background-image: url('https://i.pinimg.com/1200x/3e/f6/f4/3ef6f4d666bf0ae7febb0e6750966fc8.jpg');">
+                        <div class="service-overlay">
+                            <h3>Anxiety Disorder</h3>
+                            <div class="service-content">
+                                <p>
+                                    Professional anxiety treatment focused on restoring calmness,
+                                    confidence, and emotional balance.
+                                </p>
+                                <a class="service-btn" data-service="Anxiety Therapy" href="anxiety-disorder.html">
+                                    Learn More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="service-card" data-card="4"
+                        style="background-image: url('https://i.pinimg.com/736x/b0/ba/2b/b0ba2bbf2fb61051db1c7b1528eddf5b.jpg');">
+                        <div class="service-overlay">
+                            <h3>View More Services</h3>
+                            <div class="service-content">
+                                <p>
+                                    Explore additional mental wellness and therapy solutions
+                                    tailored for every stage of emotional care.
+                                </p>
+                                <a class="service-btn" data-service="Anxiety Therapy" href="services.html">
+                                    Learn More →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--RTC SECTION-->
+
+        <section class="rtc-premium">
+            <div class="rtc-overlay"></div>
+
+            <div class="container">
+                <div class="rtc-content">
+
+                    <span class="section-label">Residential Treatment Center</span>
+
+                    <h2>
+                        A Safe Place to Heal, Recover, and Rebuild
+                    </h2>
+
+                    <p>
+                        Our Residential Treatment Center provides a structured, supportive,
+                        and therapeutic environment for individuals requiring intensive
+                        behavioral health care. Through personalized treatment plans,
+                        evidence-based therapies, and compassionate support, we help
+                        clients build the foundation for long-term emotional wellness.
+                    </p>
+
+                    <div class="rtc-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-bed"></i>
+                            <span>24-Hour Residential Care</span>
+                        </div>
+
+                        <div class="benefit">
+                            <i class="fas fa-brain"></i>
+                            <span>Evidence-Based Treatment</span>
+                        </div>
+
+                        <div class="benefit">
+                            <i class="fas fa-user-shield"></i>
+                            <span>Safe & Secure Environment</span>
+                        </div>
+
+                        <div class="benefit">
+                            <i class="fas fa-heart"></i>
+                            <span>Holistic Recovery Programs</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Banner -->
+        <div class="container">
+            <div class="premium-banner">
+                <div class="premium-banner-content">
+                    <div class="section-label">Jupco Behavioral Healthcare</div>
+                    <h3>Holistic healing with premium personalized support</h3>
+                    <p style="color: white;">Experience elevated behavioral healthcare with private consultations,
+                        exclusive 1-on-1 treatment
+                        plans, continuous aftercare, and seamless virtual follow-ups.</p>
+                    <br>
+                    <div class="banner-features"
+                        style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+                        <div class="feature-pill"
+                            style="background: rgba(255, 255, 255, 0.1); padding: 10px 20px; border-radius: 999px;"><i
+                                class="fas fa-check"></i> 24/7 Support</div>
+                        <div class="feature-pill"
+                            style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 999px;"><i
+                                class="fas fa-check"></i> Personalized Care</div>
+                        <div class="feature-pill"
+                            style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 999px;"><i
+                                class="fas fa-check"></i> Virtual Sessions</div>
+                    </div>
+                    <br>
+                    <a href="contact.html" class="premium-banner-btn" id="bottomCTA">Schedule Your Visit →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-premium">
+        <div class="container">
+            <div class="footer-top" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 3rem;">
+                <div class="footer-brand" style="max-width: 300px;">
+                    <div class="footer-logo"><img src="./img/logo-01.png" alt="Jupco Logo"></div>
+                    <p>Premium behavioral healthcare designed around compassion, privacy, and personalized healing
+                        experiences.</p>
+                    <div class="footer-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i
+                                class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-wrapper" style="display: flex; gap: 4rem; flex-wrap: wrap;">
+                    <div class="footer-links">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="behavioral-services.html">Behavioral Health</a></li>
+                            <li><a href="schizophrenia.html">Schizophrenia Care</a></li>
+                            <li><a href="anxiety-disorder.html">Anxiety Management</a></li>
+                            <li><a href="psychiatric-evaluation.html">Psychiatric Evaluation</a></li>
+                            <li><a href="dementia-behavioral-symptoms.html">Dementia Behavioral Symptoms</a></li>
+                            <li><a href="medication-management.html">Medication Management</a></li>
+                            <li><a href="counseling.html">Counseling</a></li>
+                            <li><a href="bipolar-disorder-management.html">Bipolar Disorder Management</a></li>
+                            <li><a href="major-depressive-disorder.html">Major Depressive Disorder</a></li>
+                            <li><a href="panic-disorder.html">Panic Disorder</a></li>
+                            <li><a href="ptsd.html">PTSD</a></li>
+                            <li><a href="adhd.html">ADHD</a></li>
+                            <li><a href="sleep-disorder.html">Sleep Disorders</a></li>
+                            <li><a href="addiction.html">Addiction Treatment</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="specialties.html">Specialties</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:info@jupcohealth.com">info@jupcohealth.com</a></li>
+                            <li><a href="tel:+18885742273">631-350-0457</a></li>
+                            <li>24/7 Virtual Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <div class="newsletter-text">
+                    <h3>Stay connected with wellness insights</h3>
+                    <p>Receive mental wellness tips and resources directly in your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-bottom"
+                style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                <p>
+                    © 2026 Jupco Behavioral Healthcare. All rights reserved.
+                    Built with ❤️ by
+                    <a href="https://www.synorasol.com" target="_blank" rel="noopener noreferrer">
+                        Synorasol
+                    </a>
+                </p> <!--<div style="margin-top: 1rem;"><a href="#"
+                        style="color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 1rem;">Privacy
+                        Policy</a><a href="#" style="color: rgba(255,255,255,0.6); text-decoration: none;">Terms &
+                        Conditions</a>
+                </div>-->
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
